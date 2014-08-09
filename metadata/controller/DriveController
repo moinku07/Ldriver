@@ -1,0 +1,347 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "DriveController",
+        "designer|userAlias": "drivecontroller"
+    },
+    "designerId": "26334048-fb46-49df-8e6d-5f9cb5b31c9e",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onresumeButtonTap",
+                "implHandler": [
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('recordingbutton');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('recordingbutton');\r",
+                    "this.showHidePausePanel(false);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "resumebutton"
+            },
+            "designerId": "cfb80f44-b95f-4416-8d1c-94ccc51f490d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "resumebutton",
+                "selector": "button[name=resumebutton]"
+            },
+            "designerId": "a2dcba92-b5f1-4627-a355-eae113c90152"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "c0782ed6-1302-4f7e-a0a1-327606924d39"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tripchecklistform",
+                "selector": "formpanel[name=tripchecklistform]"
+            },
+            "designerId": "41950b51-a1a7-43fd-9b9e-afb1d1b4be41"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "recordbutton",
+                "selector": "button[name=recordbutton]"
+            },
+            "designerId": "883ee7c9-4e2e-466b-956d-4e2498e9b7bc"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onrecordButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    tripchecklistform = this.getTripchecklistform(),\r",
+                    "    formValues = tripchecklistform.getValues();\r",
+                    "var isDrivgerReady = true;\r",
+                    "for(keys in formValues){\r",
+                    "    if(!formValues[keys]){\r",
+                    "        isDrivgerReady = false;\r",
+                    "    }\r",
+                    "}\r",
+                    "if(isDrivgerReady){\r",
+                    "    this.showHideAnimation('tripchecklistbubble',true);\r",
+                    "    Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('recordingbutton');\r",
+                    "    Ldriver.app.getApplication().getController('MenuController').showButton('recordingbutton');\r",
+                    "}else{\r",
+                    "    Ext.device.Notification.show({\r",
+                    "        title: 'Warning!',\r",
+                    "        message: 'When all items are checked and you are ready to begin your trip, your supervisor may click \\'Record Trip\\' below to begin recording this trip.'\r",
+                    "    });\r",
+                    "}"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "recordbutton"
+            },
+            "designerId": "ef42bc25-74d4-45b7-9e89-07c2a9a93343"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showHideAnimation",
+                "designer|params": [
+                    "id",
+                    "hidden"
+                ],
+                "implHandler": [
+                    "if(!hidden){\r",
+                    "    Ext.getCmp(id).setHidden(hidden);\r",
+                    "}\r",
+                    "Ext.Anim.run(Ext.getCmp(id), 'fade', {\r",
+                    "    out: hidden,\r",
+                    "    autoClear: false\r",
+                    "});\r",
+                    "if(hidden){\r",
+                    "    setTimeout(function() {\r",
+                    "        Ext.getCmp(id).setHidden(hidden);\r",
+                    "    },\r",
+                    "    251);\r",
+                    "}"
+                ]
+            },
+            "designerId": "9ff429bb-fc28-456e-9d57-0c903be4c392"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showHidePausePanel",
+                "designer|params": [
+                    "show"
+                ],
+                "implHandler": [
+                    "if(show){\r",
+                    "    Ext.getCmp('driveweatherpanel').setHidden(true);\r",
+                    "    Ext.getCmp('drivetimepanel').setHidden(true);\r",
+                    "    Ext.getCmp('driveodometer').setHidden(true);\r",
+                    "    Ext.getCmp('drivepausepanel').setHidden(false);\r",
+                    "    Ext.getCmp('drivepausetimepanel').setHidden(false);\r",
+                    "    Ext.getCmp('drivemodalpanel').setHidden(false);\r",
+                    "}else{\r",
+                    "    Ext.getCmp('drivemodalpanel').setHidden(true);\r",
+                    "    Ext.getCmp('drivepausepanel').setHidden(true);\r",
+                    "    Ext.getCmp('drivepausetimepanel').setHidden(true);\r",
+                    "    Ext.getCmp('driveweatherpanel').setHidden(false);\r",
+                    "    Ext.getCmp('drivetimepanel').setHidden(false);\r",
+                    "    Ext.getCmp('driveodometer').setHidden(false);\r",
+                    "}"
+                ]
+            },
+            "designerId": "6727beb1-fd96-486d-a2f9-a51060da1eb9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "recordingbutton",
+                "selector": "button[name=recordingbutton]"
+            },
+            "designerId": "29eba91b-2aac-4625-8ba1-9fcc4c36d585"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onrecordingButtonTap",
+                "implHandler": [
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('resumebutton');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('resumebutton');\r",
+                    "this.showHidePausePanel(true);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "recordingbutton"
+            },
+            "designerId": "f62657ec-64c4-43f5-a352-e319705913f5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "pausedresumebutton",
+                "selector": "button[name=pausedresumebutton]"
+            },
+            "designerId": "d9a4e187-53db-46ca-94dd-6e81169a51c9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onpausedresumeButtonTap",
+                "implHandler": [
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('recordingbutton');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('recordingbutton');\r",
+                    "this.showHidePausePanel(false);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "pausedresumebutton"
+            },
+            "designerId": "4393f2df-394a-4efa-8e94-718aaebeb58e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onpausedendButtonTap",
+                "implHandler": [
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('approvebutton');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('approvebutton');\r",
+                    "this.showHideAnimation('approvemodalpanel');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "pausedendbutton"
+            },
+            "designerId": "c54b2462-301e-4a6c-94b7-2699ebeca974"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "pausedendbutton",
+                "selector": "button[name=pausedendbutton]"
+            },
+            "designerId": "66a59fac-0d81-4ee9-876f-1c5ae5aa26a4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "approvemodalpanelclose",
+                "selector": "button[name=approvemodalpanelclose]"
+            },
+            "designerId": "1fd39a5c-2ed9-4c13-95a4-edcdd7503052"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tripchecklistbubbleclose",
+                "selector": "button[name=tripchecklistbubbleclose]"
+            },
+            "designerId": "4c375a52-a606-4e6c-acf3-4426d1c823ab"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ontripchecklistbubblecloseButtonTap",
+                "implHandler": [
+                    "this.showHideAnimation('tripchecklistbubble',true);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "tripchecklistbubbleclose"
+            },
+            "designerId": "7cfbe5e8-926b-4818-a00c-7924fb553b66"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onapprovemodalpanelcloseButtonTap",
+                "implHandler": [
+                    "this.showHideAnimation('approvemodalpanel',true);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "approvemodalpanelclose"
+            },
+            "designerId": "8f1e1f1e-c9c5-46ee-8380-341a9afea6bf"
+        }
+    ]
+}

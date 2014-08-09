@@ -1,0 +1,158 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyTripModel",
+        "designer|userAlias": "mytripmodel"
+    },
+    "designerId": "ae1b1e35-4e0e-4bba-8732-12d051a6fb22",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "date",
+                "type": "string"
+            },
+            "designerId": "e6a8fc15-43d7-4f38-8b37-2bc0abc3aec6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title",
+                "type": "string"
+            },
+            "designerId": "b497962d-a1fa-4b07-9095-975a92bc8136"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "time",
+                "type": "int"
+            },
+            "designerId": "162c910f-f9a0-42a7-9b9a-97b45c5d8cb9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "vehicle",
+                "type": "string"
+            },
+            "designerId": "51786bd8-e719-46cd-9431-a78561ebac2c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "parking",
+                "type": "string"
+            },
+            "designerId": "47a53c57-3eb8-434c-9fca-c55a879f58c6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "traffic",
+                "type": "string"
+            },
+            "designerId": "4366f5fa-d8fb-404c-9296-ddd7b3e6b80a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "weather",
+                "type": "string"
+            },
+            "designerId": "97e43150-2cb1-4006-b104-d996f1ece405"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "location",
+                "type": "string"
+            },
+            "designerId": "bb1694c0-9d1d-4e87-a98f-adf8a3b1a7ec"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "distance",
+                "type": "int"
+            },
+            "designerId": "a1ded0e2-e2d2-453b-8eb7-c9aed571c327"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "supervisor",
+                "type": "string"
+            },
+            "designerId": "22ce42e1-03c6-42ed-93d5-b07be8ba6bb7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "gps",
+                "type": null
+            },
+            "designerId": "d191be37-d01c-44d1-a5ca-4d76def99d07"
+        }
+    ]
+}

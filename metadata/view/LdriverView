@@ -1,0 +1,35 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "l-driver-container"
+        ],
+        "designer|userClassName": "LdriverView",
+        "designer|userAlias": "ldriverview",
+        "layout": "vbox"
+    },
+    "designerId": "94319552-64d6-4db7-b022-4549a22ee0b3",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "l-driver-panel"
+                ],
+                "html": "<p>See this feature in the</br>   full version of L-Driver.</p><p style=\"line-height: 63px;padding-right:6px;font-weight:bold;\"> Coming Soon</p>",
+                "layout": "hbox"
+            },
+            "designerId": "3aef7aab-1396-4b74-ae00-fc4946d19399"
+        }
+    ]
+}

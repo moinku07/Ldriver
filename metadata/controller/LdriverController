@@ -1,0 +1,80 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LdriverController",
+        "designer|userAlias": "ldrivercontroller"
+    },
+    "designerId": "1516f689-cfd4-40a8-b10c-2b84a43b9b3a",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ongobackButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    newtripview = this.getNewtripview();\r",
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('begintrip');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('begintrip');\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type: 'slide',\r",
+                    "    direction: 'right'\r",
+                    "});\r",
+                    "main.setActiveItem(newtripview);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "gobackbutton"
+            },
+            "designerId": "e6b0bb0e-c5ef-4809-b448-a16be8c7df5f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "newtripview",
+                "selector": "newtripview"
+            },
+            "designerId": "68389948-5e0c-4179-912a-d1516024a1c4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gobackbutton",
+                "selector": "button[name=gobackbutton]"
+            },
+            "designerId": "1fe546c8-2c11-4876-a340-9fab29b74a9e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "3abd0f67-ccc8-4fd2-ab3b-bf9cf6880621"
+        }
+    ]
+}

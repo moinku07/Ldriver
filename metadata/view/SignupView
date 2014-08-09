@@ -1,0 +1,165 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "parentabcd"
+        ],
+        "style": null,
+        "designer|userClassName": "SignupView",
+        "designer|userAlias": "signupview",
+        "designer|initialView": true,
+        "layout": "vbox",
+        "scrollable": null
+    },
+    "designerId": "a5b85248-2fba-41b6-949e-3e12cf255c2d",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "cls": [
+                    "singup-panel"
+                ],
+                "style": null,
+                "layout": "vbox",
+                "scrollable": null
+            },
+            "designerId": "cf6376ca-5013-4495-977a-5cf390731654",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "signup-button"
+                        ],
+                        "right": 0,
+                        "top": null,
+                        "width": null,
+                        "text": "Sign Up"
+                    },
+                    "designerId": "adf0fa45-da35-488a-8bef-3631e4f82e0a"
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "cls": [
+                            "formpaneltext"
+                        ],
+                        "height": null,
+                        "style": null,
+                        "layout": "vbox",
+                        "scrollable": false
+                    },
+                    "designerId": "97857417-b311-453e-bdc3-8f7ef511f393",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "form-text-field"
+                                ],
+                                "label": null,
+                                "placeHolder": "Username  "
+                            },
+                            "designerId": "a0d0834e-4156-489c-b9c6-d0ef9710d189"
+                        },
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "form-text-field"
+                                ],
+                                "label": null,
+                                "placeHolder": "Password"
+                            },
+                            "designerId": "643acaef-fc5d-4840-906a-49a4e53adcc2"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "loginbutton",
+                                "cls": [
+                                    "tick-buttonimage"
+                                ],
+                                "height": null,
+                                "style": null,
+                                "text": null
+                            },
+                            "designerId": "5d054d99-b43b-4ac7-bda3-f4c357eaaec1",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "name",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "facebookbutton",
+                                "cls": [
+                                    "facebookbutton"
+                                ],
+                                "height": null,
+                                "html": "<p>Sign in via Facebook</p>",
+                                "style": null,
+                                "designer|displayName": null,
+                                "text": null
+                            },
+                            "designerId": "b9f6db6f-08dd-4267-9416-467653b9fb45",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "name",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

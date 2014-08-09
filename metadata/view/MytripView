@@ -1,0 +1,133 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "mytrip_container"
+        ],
+        "style": null,
+        "designer|userClassName": "MytripView",
+        "designer|userAlias": "mytripview",
+        "layout": "vbox",
+        "scrollable": null
+    },
+    "designerId": "d75ad5fe-07e4-4953-99c6-b473d8f7437d",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "mytrip_titlebar"
+                ],
+                "docked": "top",
+                "height": null,
+                "html": null,
+                "maxHeight": null,
+                "minHeight": null,
+                "ui": null,
+                "width": null,
+                "designer|displayName": "titlebar",
+                "scrollable": null,
+                "title": "<p>My Trips</p>"
+            },
+            "designerId": "c17eac3a-1efb-4671-9e46-f23bda9ebc09",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "handlebutton"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "style": null,
+                        "width": null,
+                        "designer|displayName": "handlebutton",
+                        "text": null
+                    },
+                    "designerId": "e14a6242-76f6-4fee-8800-dd6fdf478d92"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "triplist",
+                "data": null,
+                "layout|flex": 1,
+                "cls": [
+                    "triplist"
+                ],
+                "height": null,
+                "id": "triplist",
+                "itemId": null,
+                "style": null,
+                "scrollable": [
+                    "vertical"
+                ],
+                "store": "mytripstore",
+                "grouped": true,
+                "onItemDisclosure": true
+            },
+            "configAlternates": {
+                "data": "array"
+            },
+            "designerId": "7059489f-af7b-4b3d-95fb-13e9927e58a4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "data",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<tpl if=\"isNight(date)\">\r",
+                            "    <div class=\"trip-list night\">\r",
+                            "<tpl else>\r",
+                            "    <div class=\"trip-list day\">\r",
+                            "</tpl>\r",
+                            "    <div class=\"left\"><p>{[getFormattedDateOnly(values.date)]}</p></div>\r",
+                            "    <div class=\"right\"><p><span class=\"trip_span\"><tpl if=\"time\">{time}min</tpl></span>{title}</p></div>\r",
+                            "</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "7574a3f0-d77a-4d95-9354-3e97678355bf"
+                }
+            ]
+        }
+    ]
+}

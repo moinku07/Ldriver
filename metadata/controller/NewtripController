@@ -1,0 +1,168 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "NewtripController",
+        "designer|userAlias": "newtripcontroller"
+    },
+    "designerId": "a38b910a-e444-4149-9c15-7ee8135e0b9f",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ondrivelistitemPanel",
+                "implHandler": [
+                    "var that = this,\r",
+                    "    main = this.getMain();\r",
+                    "\r",
+                    "component.element.on({\r",
+                    "    tap : function(){\r",
+                    "        var ldriverview = that.getLdriverview();\r",
+                    "        Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('gobackbutton');\r",
+                    "        Ldriver.app.getApplication().getController('MenuController').showButton('gobackbutton');\r",
+                    "        main.getLayout().setAnimation({\r",
+                    "            type: 'slide',\r",
+                    "            direction: 'left'\r",
+                    "        });\r",
+                    "        main.setActiveItem(ldriverview);\r",
+                    "    }\r",
+                    "});"
+                ],
+                "name": "initialize",
+                "designer|targetType": "Ext.Panel",
+                "designer|controlQuery": "drivelistitem"
+            },
+            "designerId": "18926da6-08ff-4a5d-acb3-e462e6957697"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "668b6d50-219c-4d90-a674-8b024d6fd43e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "newtripview",
+                "selector": "newtripview"
+            },
+            "designerId": "75d719ac-f8b3-45f9-af23-2da6917805a5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "tripsummaryview",
+                "selector": "tripsummaryview",
+                "xtype": "tripsummaryview"
+            },
+            "designerId": "668e0f3e-2a9e-4227-b772-df5f6eebf6d6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "ldriverview",
+                "selector": "ldriverview"
+            },
+            "designerId": "29782a26-e17d-4157-bf71-9a5941700b2f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "drivelistitem",
+                "selector": "panel[name=drivelistitem]"
+            },
+            "designerId": "664b4404-4aaa-4cd4-ae77-c51ac9fa7ddc"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "begintrip",
+                "selector": "button[name=begintrip]"
+            },
+            "designerId": "6aa98b7e-18a8-41ed-b120-a9e968865c7e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onbegintripButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    driveview = this.getDriveview();\r",
+                    "Ldriver.app.getApplication().getController('DriveController').showHideAnimation('approvemodalpanel',true);\r",
+                    "Ldriver.app.getApplication().getController('DriveController').showHideAnimation('tripchecklistbubble');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').removeButtonActiveClass('recordbutton');\r",
+                    "Ldriver.app.getApplication().getController('MenuController').showButton('recordbutton');\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type: 'slide',\r",
+                    "    direction: 'left'\r",
+                    "});\r",
+                    "main.setActiveItem(driveview);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "begintrip"
+            },
+            "designerId": "2547e73b-8771-4b64-93dd-fc210ba90b34"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "driveview",
+                "selector": "driveview"
+            },
+            "designerId": "20a5e266-c3a4-42e4-a815-0bc0d75f0f5c"
+        }
+    ]
+}

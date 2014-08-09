@@ -1,0 +1,1021 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "newtrip_view"
+        ],
+        "height": null,
+        "designer|userClassName": "NewtripView",
+        "designer|userAlias": "newtripview",
+        "layout": "vbox",
+        "scrollable": "vertical"
+    },
+    "configAlternates": {
+        "option": "array"
+    },
+    "designerId": "21f49bb1-1423-4f49-8c21-44bb54cc9473",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "option",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "newtrip_titlebar",
+                    "top-toolbar"
+                ],
+                "docked": "top",
+                "style": null,
+                "designer|displayName": "title_bar",
+                "scrollable": null,
+                "title": "<p style=\"margin-top:-1px;\">New Trip</p>"
+            },
+            "designerId": "92bc606a-6689-4bd7-9bea-7e255d842edb",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "handle-button",
+                        "cls": [
+                            "handlebutton"
+                        ],
+                        "height": null,
+                        "left": null,
+                        "margin": 0,
+                        "style": null,
+                        "top": null,
+                        "width": null,
+                        "text": null
+                    },
+                    "designerId": "3714056b-28a4-4a32-9e18-4537a39b9a4a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "9cdd1b48-9844-44af-806b-7cb6523bf7c1"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "newtrip_button"
+                        ],
+                        "designer|displayName": "cancel",
+                        "text": "<p class=\"cancel\">Cancel</p>"
+                    },
+                    "designerId": "8ff70d1a-f193-40da-9cc2-faf1375d2c3d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "name": "newtriplistpanel",
+                "cls": [
+                    "menuP_panel"
+                ],
+                "docked": null,
+                "height": null,
+                "style": "padding-bottom:90px",
+                "width": null,
+                "layout": "vbox",
+                "scrollable": null
+            },
+            "designerId": "160b9e58-45d2-4dcd-ab81-7358ede1f3ac",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_first_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "style": null,
+                        "width": null,
+                        "designer|displayName": "Start Location",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "f0297eb5-bf0c-4035-ab3e-862045b48138",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "home-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "b2dd92b8-07a3-43f4-b12c-943efdf42cb8"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "hidden": false,
+                                "html": "<p class=\"firsttext-span\" style=\"background:#e6f2fd;color:#3892e3\"><span class=\"lasttext-span\" style=\"color:#000; font-size:15px;\">Richmond</span>Start Location</p>",
+                                "width": null
+                            },
+                            "designerId": "5f0f8a5e-639e-4fe4-b3bc-1568c532ef70"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "5aec6387-bd1a-401d-adfa-876e5074c56f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_second_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "designer|displayName": "Destination",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "ab748178-878c-4e99-8e8d-c4adb2903a89",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "map-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "8c0d0a96-406d-414f-b931-2caa8ac5f287"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "hidden": false,
+                                "html": "<p class=\"firsttext-span\" style=\"background:#effbe0;color:#5aa602\"><span class=\"lasttext-span\" style=\"color:#000;\">Balwyn</span>Destination</p>",
+                                "width": null
+                            },
+                            "designerId": "83cf60bf-efec-4991-86b8-89c3e366a279"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "aefba129-b0d0-4084-a262-c77aa0d32f5b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_third_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Vehicle",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "cade7ec1-dbe5-4183-88fc-8e0cc9724379",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "car-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "09c81c72-cc84-431e-8eba-f5535e6fbefa"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "hidden": false,
+                                "html": "<p class=\"firsttext-span\" style=\"background:#fff0e6;color:#fb6e17\"><span class=\"lasttext-span\" style=\"color:#000;\">Dad's Club Sport</span>Vehicle</p>",
+                                "width": null
+                            },
+                            "designerId": "232c0d18-13a4-4838-a26d-4cbbb5d230b3"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "b25c0d21-ad76-4c48-941e-00935909f2c9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": null,
+                        "cls": [
+                            "home_first_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Parking",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "b1b64167-d4a6-4c03-8fe9-7d9f4f58f00d",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "parking-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "cf866d74-4ad4-4625-a8b6-7abb3fc033b4"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#e6f2fd;color:#3892e3\"><span class=\"lasttext-span\" style=\"color:#000;\"></span>Parking</p>",
+                                "width": null
+                            },
+                            "designerId": "bc33b636-9504-479a-9ed2-0735954bea01"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "docked": null,
+                                "height": null,
+                                "width": null,
+                                "layout": "vbox"
+                            },
+                            "designerId": "b60d3605-ecf4-451c-b689-44966784432f",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Toggle",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "toggle-field",
+                                            "toggle-field-first"
+                                        ],
+                                        "height": null,
+                                        "padding": null,
+                                        "width": null,
+                                        "zIndex": 10,
+                                        "label": null
+                                    },
+                                    "designerId": "946729ef-11c0-42ae-8c02-26d808fecb51"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_second_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Traffic",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "3245a3ab-29cd-41ff-ba09-50bc8ab9cd8f",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "traffic-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "b1a84cf2-3cfd-4472-8aea-e6c7e06ec6bf"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#effbe0;color:#5aa602\"><span class=\"lasttext-span\" style=\"color:#000;\">Moderate</span>Traffic</p>",
+                                "width": null
+                            },
+                            "designerId": "b12d0829-3c86-4f8b-8ed0-fdcb373f7141"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "a098252d-094a-41a4-8113-102465405250"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "home_third_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Weather",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "7b5dc6e6-6f90-4b64-85d3-62af8f7ab57b",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "weather-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "694fb221-83ac-444b-a33e-5864ccf21bbe"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#fff0e6;color:#fb6e17\"><span class=\"lasttext-span\" style=\"color:#000;\"></span>Weather</p>",
+                                "width": null
+                            },
+                            "designerId": "05ba2e2c-491f-4378-a20e-8f4e6e2dcc24"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "width": null,
+                                "layout": "vbox"
+                            },
+                            "designerId": "704e5141-21c5-459f-b2d9-507f600ead2c",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Toggle",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "toggle-field-second",
+                                            "toggle-field"
+                                        ],
+                                        "hidden": null,
+                                        "width": null,
+                                        "zIndex": 10,
+                                        "label": null
+                                    },
+                                    "designerId": "4bf9f318-a229-4e93-8cae-b40f81303be7"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_first_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Road",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "b6c1385c-1e7c-4c30-9181-f281b591571b",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "road-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "461f6d59-7c02-4ab2-883b-ecbc252dd2ac"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#e6f2fd;color:#3892e3\"><span class=\"lasttext-span\" style=\"color:#000;\">Inner City</span>Road</p>",
+                                "width": null
+                            },
+                            "designerId": "2f79f89d-6c59-47b1-8647-9ea6b6a6c772"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "73be1c62-7447-4374-b2c0-27e3691a6cd1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_second_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Time of Day",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "f341ed35-0ee4-4c57-8200-cbd991f832e7",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "time-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "f2332667-89fb-426f-82fd-81b1d8851679"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#effbe0;color:#5aa602\"><span class=\"lasttext-span\" style=\"color:#000;\">Dawn/Dusk</span>Time of Day</p>",
+                                "width": null
+                            },
+                            "designerId": "566b486c-f654-4631-bfc4-986cb3f55190"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "e3a45ed2-a997-4d6c-96c2-b97f2a83f7c9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_third_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Odometer",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "405320ae-c3e4-404c-b0ed-0fb0c19032ad",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "odometer-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "ae852152-dbba-49a7-a369-3fb2aef0d8b3"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#fff0e6;color:#fb6e17\"><span class=\"lasttext-span\" style=\"color:#000;\">58703 km</span>Odometer</p>",
+                                "width": null
+                            },
+                            "designerId": "5d40b7dc-6332-47f2-bb5d-e5cc322f1384"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "55e12cdc-9330-4231-aff4-945ad2f54942"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivelistitem",
+                        "cls": [
+                            "home_first_panel"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "hidden": false,
+                        "designer|displayName": "Supervisor",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "6cddd2a9-d12c-4248-ade1-e473f2bab395",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "supervisor-panel-image",
+                                    "list-image"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "1d4286df-6d08-4ffd-9fea-40f8113b6bd2"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label"
+                                ],
+                                "html": "<p class=\"firsttext-span\" style=\"background:#e6f2fd;color:#3892e3\"><span class=\"lasttext-span\" style=\"color:#000;\">Ronald Brown</span>Supervisor</p>",
+                                "width": null
+                            },
+                            "designerId": "ae20d1c7-ce10-41df-817f-64388448341a"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "discloser-image"
+                                ],
+                                "height": null,
+                                "width": null
+                            },
+                            "designerId": "6be90d36-78fa-4403-9c6f-fa85661db3c8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

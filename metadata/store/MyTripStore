@@ -1,0 +1,71 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": null,
+        "model": "MyTripModel",
+        "storeId": "mytripstore",
+        "designer|userClassName": "MyTripStore",
+        "designer|userAlias": "mytripstore"
+    },
+    "designerId": "8dd8994f-403e-47cc-9740-962b5a90e0f2",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "json/trip.json"
+            },
+            "designerId": "13b40131-808f-4e03-96fb-6789a1fee3d9",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "3e5dc60e-0c5f-4b43-a091-043f98eb4750"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "96fe0a94-288e-40c8-8850-5b983de869a4",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return getMonthNameWithYear(item.data.date);"
+                        ]
+                    },
+                    "designerId": "25ee98c3-c0aa-4cc7-9cea-58835f32c83a"
+                }
+            ]
+        }
+    ]
+}

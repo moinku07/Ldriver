@@ -1,0 +1,846 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "closetrip"
+        ],
+        "style": "background:#fff;",
+        "designer|userClassName": "TripsummaryView",
+        "designer|userAlias": "tripsummaryview",
+        "layout": "vbox",
+        "scrollable": false
+    },
+    "designerId": "532013fe-0207-4927-a311-c00b5c593b02",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "tripsummary_titlebar",
+                    "top-toolbar"
+                ],
+                "docked": "top",
+                "style": null,
+                "designer|displayName": "title_bar",
+                "scrollable": null,
+                "title": "<p style=\"margin-top:-1px;\">Trip Summary</p>"
+            },
+            "designerId": "ac954fc4-0665-4f0f-9ab0-65b6c328a157",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "handle-button",
+                        "cls": [
+                            "handlebutton"
+                        ],
+                        "height": null,
+                        "left": null,
+                        "margin": 0,
+                        "style": null,
+                        "top": null,
+                        "width": null,
+                        "text": null
+                    },
+                    "designerId": "a1f13610-93ff-4b96-9597-7bca3e9d1b2a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "6231e283-3282-49df-a21f-2e9bbfba289e"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "tripdetailscancel",
+                        "cls": [
+                            "newtrip_button"
+                        ],
+                        "designer|displayName": "cancel",
+                        "text": "<p class=\"cancel\">Cancel</p>"
+                    },
+                    "designerId": "5b67da95-e568-488c-8118-a58cc2959f8c",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "cls": [
+                    "summary-trip-panel"
+                ],
+                "height": null,
+                "style": null,
+                "layout": "vbox",
+                "scrollable": "vertical"
+            },
+            "designerId": "5d7be0d0-d7a7-4d14-be26-e5d5bb8bb561",
+            "cn": [
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "trip_summary_date-panel"
+                        ],
+                        "docked": null,
+                        "layout": "vbox"
+                    },
+                    "designerId": "4cc54f38-a6e1-44c8-8a92-f26ed019864b",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip_summary_date-panel-text"
+                                ],
+                                "docked": null,
+                                "layout": "hbox"
+                            },
+                            "designerId": "87ade3eb-3023-4a2b-9772-50e48eee3665",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-calendar-image"
+                                        ],
+                                        "layout": "vbox"
+                                    },
+                                    "designerId": "94b2eac5-23ac-4387-b2ba-031267384c6f"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "trip-summary-date-text"
+                                        ],
+                                        "html": "<p>September 9th, 2013</p>"
+                                    },
+                                    "designerId": "3f169a3d-9f31-4cbc-9b7d-f1b95d87cdfc"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "trip-summary-time-counter"
+                        ],
+                        "html": "<h1>00:00</h1>"
+                    },
+                    "designerId": "b27bc334-c813-4dcf-b88e-7b6a8f25d3af",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-summary-time-counter-min-hour"
+                                ],
+                                "html": "<p class=\"trip-min\"><span class=\"trip-hour\">minutes</span>hours</p>"
+                            },
+                            "designerId": "63508647-d7c4-4986-be50-a0a03c84aa6a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "cls": [
+                            "googlemap-trip-panel"
+                        ],
+                        "width": null,
+                        "layout": "vbox"
+                    },
+                    "designerId": "879cc891-2363-4eda-89cc-2d79b24d7449",
+                    "cn": [
+                        {
+                            "type": "Ext.Map",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "map",
+                                "cls": [
+                                    "googlemap-trip"
+                                ],
+                                "height": null
+                            },
+                            "designerId": "16c367cc-dbfe-4d99-8dd0-e206339f4fc6",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "name",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "trip-image-panel"
+                        ],
+                        "height": null,
+                        "layout": "vbox"
+                    },
+                    "designerId": "fede170d-bf81-42ab-b129-2cb4c2f3455b",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "40c19798-3cad-4c3f-aa9d-24771846c1cd",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image-map",
+                                            "trip-panel-image"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "e0876a79-d212-486d-83bf-3e7671c3b7ef"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Richmond to Balwyn</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "bda56028-187f-4f15-bccc-7403f01344eb"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "9105ec47-8347-48cb-813a-722612b3a0af",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-car"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "923486a3-6e3c-4fa4-bfe8-a0057caf001b"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Dad’s Club Sport</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "c7db76ba-6087-45fd-ad84-fcb0375a03e8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "4004ad40-4bd1-40c8-8435-15b0548a539d",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-parking"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "2c909d22-9b4b-4c02-b201-e9d45c8adcba"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Parking Practice</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "06fb7ca1-e3df-46ea-90bb-963eed68be6f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "38d7b841-7086-48a2-8b73-7450dd737a35",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-traffic"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "03dcee62-69d0-4125-b90b-4cf4535afc98"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Heavy Traffic</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "ed06bee8-a6d0-41cc-b060-9f49ce953c8d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "50f7fb00-1f91-4195-adbc-1c4e96df9d82",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-weather"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "ce8576d3-7d8c-4a2e-9795-e9793e926c41"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Light Rain</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "177ee903-551f-4d01-ba5b-0323b99d5a9d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "596bfc61-826d-43a7-925f-e375538d44aa",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-road"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "299a61f6-7cd4-431f-8be1-089dd786970e"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Inner City</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "04d7856e-6f11-4931-8c16-1c71d0e2c7df"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "f7549609-09c3-4995-8961-a9ad728e8f42",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-clock"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "4afa0f24-e255-490a-bccd-c51c6efc9d35"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>Dawn / Dusk</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "8c347c61-683d-4c5e-b2ab-6fd3f47fcf0a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-images-panel-home"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "hidden": false,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "86117e5e-1ff5-4691-a36f-b797a4c0339f",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "trip-panel-image",
+                                            "trip-panel-image-odometer"
+                                        ],
+                                        "docked": null,
+                                        "height": null,
+                                        "style": null,
+                                        "width": null,
+                                        "layout": "vbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "eb8b9718-9927-4243-9b49-e37d143382b3"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "cls": [
+                                            "home-label-trip"
+                                        ],
+                                        "html": "<p>58712 KM</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "4a08241d-a975-4b85-9469-cb0a0165088b"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "trip-images-panel-home-supervisor"
+                        ],
+                        "layout": "hbox"
+                    },
+                    "designerId": "67f7b101-9997-439c-81f2-10ae122937cb",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "trip-panel-image",
+                                    "trip-panel-image-supervisor"
+                                ],
+                                "docked": null,
+                                "height": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "d9636f52-e8cf-4702-99fa-7551fbad9378"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "cls": [
+                                    "home-label-trip-supervisor"
+                                ],
+                                "html": "<p>Supervised By</p>",
+                                "width": null
+                            },
+                            "designerId": "4ff5a527-be8b-493c-843f-46a2e28183f2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "summary-box-panel"
+                        ]
+                    },
+                    "designerId": "65c2a594-a0ca-459c-acc4-b6c3a5a8a5bc",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "cls": [
+                                    "supervisor-box-panel"
+                                ],
+                                "layout": "hbox"
+                            },
+                            "designerId": "8a518f0d-fb29-4e6e-97c6-7c4d442b4c7b"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

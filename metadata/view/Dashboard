@@ -1,0 +1,602 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "dashboard-input"
+        ],
+        "height": null,
+        "width": null,
+        "designer|userClassName": "Dashboard",
+        "designer|userAlias": "dashboard",
+        "layout": "vbox",
+        "scrollable": "vertical"
+    },
+    "designerId": "f5f78d2d-ba5a-4792-a4b2-b8cb0518b044",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "dashboard-toolbar",
+                    "top-toolbar"
+                ],
+                "docked": "top",
+                "height": null,
+                "html": null,
+                "maxHeight": null,
+                "minHeight": null,
+                "ui": null,
+                "width": null,
+                "designer|displayName": "titlebar",
+                "scrollable": null,
+                "title": "<p>Dashboard</p>"
+            },
+            "designerId": "73d893e3-04d4-4491-af49-93c3c61fccfe",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "handlebutton"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "style": null,
+                        "width": null,
+                        "designer|displayName": "handlebutton",
+                        "text": null
+                    },
+                    "designerId": "d4604484-7075-48fa-8777-5499dddcae1f"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "b2cc5e85-8070-4b4d-9df4-7f2b1593690c"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "userbutton"
+                        ],
+                        "docked": null,
+                        "style": null,
+                        "width": null,
+                        "designer|displayName": "userbutton",
+                        "iconAlign": null,
+                        "iconCls": null,
+                        "text": null
+                    },
+                    "designerId": "61f93820-27ac-4021-a87b-45e60d1bf8ab"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "cls": [
+                    "formpanellearner"
+                ],
+                "height": null,
+                "margin": 0,
+                "style": "padding-bottom:50px",
+                "width": null,
+                "layout": "vbox",
+                "scrollable": null
+            },
+            "designerId": "66e991aa-3afa-4dc1-8445-a7954ccc6ca5",
+            "cn": [
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "jklm"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "width": null,
+                        "designer|displayName": "learningdriving",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "f7de806a-9b0b-480f-9382-cbb78a9b72d8",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "learnerpanel-user"
+                                ],
+                                "docked": "left",
+                                "height": null,
+                                "html": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "0016a74c-36d8-4571-a4b6-d69ed0b5abf6",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerdriver"
+                                        ],
+                                        "docked": "top",
+                                        "height": null,
+                                        "html": "<p>Learner Driver</p>",
+                                        "style": "background:#406d96",
+                                        "width": null
+                                    },
+                                    "designerId": "d193232d-842c-49fe-82c7-2be50eb5aa5c"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerimage-driving"
+                                        ],
+                                        "docked": "bottom",
+                                        "height": null,
+                                        "html": "<p>Samuel Brown</p>",
+                                        "width": null,
+                                        "layout": "hbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "39674de4-1053-47c8-8498-b049eaaed6ef"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "learnerpanel"
+                                ],
+                                "docked": "right",
+                                "height": null,
+                                "style": "background: #216099",
+                                "width": null,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "93a0c907-2139-4e20-be8c-b2aee53f5b23",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerdriver"
+                                        ],
+                                        "docked": "top",
+                                        "height": null,
+                                        "html": "<p>Total Trips</p>",
+                                        "style": "background:#355471",
+                                        "width": null
+                                    },
+                                    "designerId": "f2eb1fab-196d-46d5-9418-497a073a079a"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "number-32"
+                                        ],
+                                        "height": null,
+                                        "html": "<p>32</p>",
+                                        "width": null
+                                    },
+                                    "designerId": "ce925e3a-82ac-4eb6-a825-07e371b87219"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "label-total-time"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "html": "<h1>Total Driving Time</h1>",
+                        "style": "background:#416d95",
+                        "width": null
+                    },
+                    "designerId": "15847112-cd8b-4d91-a937-5159208a6966"
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "pan_driving_time"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "style": "background:#5ca7eb",
+                        "width": null,
+                        "layout": "vbox",
+                        "scrollable": null
+                    },
+                    "designerId": "895beafc-507b-43fb-89bc-5323afdfd6eb",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "end",
+                                "container|pack": "center",
+                                "cls": [
+                                    "pin-input-panel"
+                                ],
+                                "docked": "top",
+                                "height": null,
+                                "width": null,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "5705b18a-9232-4994-8bfc-7534f2a850dd",
+                            "cn": [
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "pin-input-panel-number"
+                                        ],
+                                        "html": "<p>0</p>"
+                                    },
+                                    "designerId": "8a9a5d7e-436d-43c3-9f9c-19ce971e2397"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "pin-input-panel-number"
+                                        ],
+                                        "html": "<p>1</p>"
+                                    },
+                                    "designerId": "6033af26-abdf-4f00-9758-198c880d75a7"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "pin-input-panel-number"
+                                        ],
+                                        "html": "<p>9</p>"
+                                    },
+                                    "designerId": "872aa00e-918c-4bf2-86f1-649935df4e08"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "pin-input-panel-number"
+                                        ],
+                                        "html": "<p>4</p>"
+                                    },
+                                    "designerId": "0ff0f240-eedd-4d4a-a531-d74cef4ce620"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "pin-input-panel-number"
+                                        ],
+                                        "html": "<p>8</p>"
+                                    },
+                                    "designerId": "9fb17391-497d-455d-8bf2-6ee7acd7ffa8"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "sun-panel"
+                                ],
+                                "docked": "left",
+                                "height": null,
+                                "html": "<p style=\"letter-spacing: 1px;padding-left:30px;padding-top:11px;font-weight:bold;font-size: 18px; line-height: 20px;color:#072641;\"><span class=\"text-pan\" ></span> 18h  :  28m</p>",
+                                "width": null
+                            },
+                            "designerId": "f8b1ec37-d68c-4c6c-bc76-a9cf1e8711cf"
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "moon-panel"
+                                ],
+                                "docked": "right",
+                                "height": null,
+                                "html": "<p style=\"letter-spacing: 1px;padding-left:14px;font-size: 18px; line-height: 17px;padding-top:13px;font-weight:bold;color:#fff;\"><span class=\"text-pan\"></span> 07h  :  20m</p>",
+                                "width": null
+                            },
+                            "designerId": "5308810a-4188-4e84-a537-4e897e53f5b7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "mkl"
+                        ],
+                        "docked": null,
+                        "height": null,
+                        "width": null,
+                        "designer|displayName": "drivingtime",
+                        "layout": "hbox",
+                        "scrollable": null
+                    },
+                    "designerId": "2df51455-30e3-4bfe-8ac7-96e3a9cefb7d",
+                    "cn": [
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "learnerpanel"
+                                ],
+                                "docked": "left",
+                                "height": null,
+                                "style": "background:#216099",
+                                "width": null,
+                                "layout": "hbox",
+                                "scrollable": null
+                            },
+                            "designerId": "75afebe5-a299-40b6-8c3d-2ab45610a5e5",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerdriver-time"
+                                        ],
+                                        "docked": "top",
+                                        "height": null,
+                                        "html": "<p>Time Remaining</p>",
+                                        "style": "background:#355471",
+                                        "width": null
+                                    },
+                                    "designerId": "5b1e4dff-6433-4798-bb49-7387ff64cc2c"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerimage"
+                                        ],
+                                        "height": null,
+                                        "html": "<h1>100<sup style=\"font-size:19px;line-height:41px;\">h</sup></h1>",
+                                        "width": null,
+                                        "layout": "hbox",
+                                        "scrollable": null
+                                    },
+                                    "designerId": "477baa16-652f-4152-bb3a-1d20398f648b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "label-learnerimage"
+                                                ],
+                                                "docked": "bottom",
+                                                "height": null,
+                                                "html": "<p>12<sup style=\"font-size:13px;line-height:20px; padding-left:2px;\">m</sup></p>",
+                                                "width": null
+                                            },
+                                            "designerId": "6e32a0cc-07a1-4d8a-8404-095c3b33a0b5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "learnerpanel-raincloud"
+                                ],
+                                "docked": "right",
+                                "height": null,
+                                "html": null,
+                                "style": null,
+                                "width": null,
+                                "layout": "vbox",
+                                "scrollable": null
+                            },
+                            "designerId": "e9406128-816d-4aa9-8417-2380b7f6fc0a",
+                            "cn": [
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "learnerdriver"
+                                        ],
+                                        "docked": "top",
+                                        "height": null,
+                                        "html": "<p>Current Conditions</p>",
+                                        "style": "background:#406d96",
+                                        "width": null
+                                    },
+                                    "designerId": "b4e3a863-3681-42d9-9873-45a1e952640f"
+                                },
+                                {
+                                    "type": "Ext.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "traffic-panel-rain"
+                                        ],
+                                        "docked": "bottom",
+                                        "height": null,
+                                        "html": "<p style=\"padding-left:37px;font-size:15px;color:#072641;padding-top:8px;\"><span class=\"text-pan\" style=\"margin-left: 83px; position: absolute;\"></span>Light Traffic</p>",
+                                        "minHeight": null,
+                                        "width": null
+                                    },
+                                    "designerId": "aa373341-04ef-4b8a-b498-e7d804e3657d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

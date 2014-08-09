@@ -1,0 +1,402 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "style": null,
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
+        "layout": "card"
+    },
+    "designerId": "6cbe2efb-83af-4aa1-a76f-cbf106f98ccc",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "end",
+                "cls": [
+                    "bottom-menu",
+                    "drive"
+                ],
+                "docked": "bottom",
+                "hidden": null,
+                "id": "bottomMenu",
+                "designer|displayName": "bottom-menu",
+                "layout": "vbox"
+            },
+            "designerId": "2ce539a1-063c-411b-a840-32259e94ee78",
+            "cn": [
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "container"
+                        ]
+                    },
+                    "designerId": "25c24dc5-a229-4872-a451-ea459875f441",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "dashboardbutton",
+                                "cls": [
+                                    "btn-dashboard",
+                                    "x-button-active"
+                                ],
+                                "id": "dashboardbutton",
+                                "iconAlign": "top",
+                                "iconCls": "dashboard",
+                                "text": "Dashboard"
+                            },
+                            "designerId": "1e3d7a3a-a3fe-4535-8915-abedd83df021",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "name",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "name": "tripbutton",
+                                "cls": [
+                                    "btn-trips"
+                                ],
+                                "id": "tripbutton",
+                                "iconAlign": "top",
+                                "iconCls": "trips",
+                                "text": "My Trips"
+                            },
+                            "designerId": "f7a5056d-bd9b-4085-ba6d-8a6fbc0d3c6b",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "name",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "drivebutton",
+                        "cls": [
+                            "btn-drive"
+                        ],
+                        "hidden": false,
+                        "id": "drivebutton",
+                        "iconAlign": "top",
+                        "iconCls": "drive",
+                        "text": "Let's Drive"
+                    },
+                    "designerId": "ecf49d59-e3da-4e04-bbf3-27e3fc81ba44",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "begintrip",
+                        "cls": [
+                            "btn-drive",
+                            "begin-trip"
+                        ],
+                        "hidden": true,
+                        "id": "begintrip",
+                        "iconAlign": "top",
+                        "iconCls": "drive",
+                        "text": "Begin Trip"
+                    },
+                    "designerId": "a400e7b1-8cef-4283-8460-a87f61cd5689",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "recordbutton",
+                        "cls": [
+                            "btn-drive",
+                            "record-trip"
+                        ],
+                        "hidden": true,
+                        "id": "recordbutton",
+                        "iconAlign": "top",
+                        "iconCls": "record",
+                        "text": "Record Trip"
+                    },
+                    "designerId": "62a60f48-732b-4b11-a1e4-3801f19d5070",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "recordingbutton",
+                        "cls": [
+                            "btn-drive",
+                            "recording-trip"
+                        ],
+                        "hidden": true,
+                        "id": "recordingbutton",
+                        "iconAlign": "top",
+                        "iconCls": "recording",
+                        "text": "Record Trip"
+                    },
+                    "designerId": "4588dd2d-ea2c-4442-9b81-4ac559af23ee",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "gobackbutton",
+                        "cls": [
+                            "btn-drive",
+                            "btn-goback"
+                        ],
+                        "hidden": true,
+                        "id": "gobackbutton",
+                        "iconAlign": "top",
+                        "iconCls": "goback",
+                        "text": "Go Back"
+                    },
+                    "designerId": "af740e8c-b4ab-4e75-b663-997706523f0e",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "pausedbutton",
+                        "cls": [
+                            "btn-drive",
+                            "btn-paused"
+                        ],
+                        "hidden": true,
+                        "id": "pausedbutton",
+                        "iconAlign": "top",
+                        "iconCls": "paused",
+                        "text": "Pause Trip"
+                    },
+                    "designerId": "23a7535f-5b2b-4f3f-bdc9-5e05bdf3f370",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "resumebutton",
+                        "cls": [
+                            "btn-drive",
+                            "btn-resume"
+                        ],
+                        "hidden": true,
+                        "id": "resumebutton",
+                        "iconAlign": "top",
+                        "iconCls": "resume",
+                        "text": "Resume Trip"
+                    },
+                    "designerId": "4f9d8257-7b24-47ac-8889-a325361b2ec1",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "approvebutton",
+                        "cls": [
+                            "btn-drive",
+                            "btn-approve"
+                        ],
+                        "hidden": true,
+                        "id": "approvebutton",
+                        "iconAlign": "top",
+                        "iconCls": "approve",
+                        "text": "Approve Trip"
+                    },
+                    "designerId": "30182544-5a95-411a-8bd2-8efe1c77c614",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "6e84b177-b383-46f3-80e5-a0b442a485f4",
+            "masterInstanceId": "f5f78d2d-ba5a-4792-a4b2-b8cb0518b044"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "10f286fc-4ddb-4f89-bf17-aa66bf4a2c6b",
+            "masterInstanceId": "21f49bb1-1423-4f49-8c21-44bb54cc9473"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "8c8b2682-c759-48f3-9cc1-5bd7df216b3e",
+            "masterInstanceId": "7d434e39-1676-4edf-b070-c0aa5831604e"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "07860617-448e-4da1-9e4d-abe66ded49e9",
+            "masterInstanceId": "42f329bc-8a7f-459d-94d5-213d03722a4b"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "bb99b1e4-1053-4766-b109-0580b393778f",
+            "masterInstanceId": "d75ad5fe-07e4-4953-99c6-b473d8f7437d"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "6ce751e9-22d3-4abb-924c-156b6a6da688",
+            "masterInstanceId": "532013fe-0207-4927-a311-c00b5c593b02"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "6a75d203-f53e-4e7b-bd75-ebe5c432c1c3",
+            "masterInstanceId": "94319552-64d6-4db7-b022-4549a22ee0b3"
+        }
+    ]
+}

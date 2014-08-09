@@ -1,0 +1,132 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MytripController",
+        "designer|userAlias": "mytripcontroller"
+    },
+    "designerId": "e996f8d1-651a-4338-9bc7-22985c9cf05e",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ontripListItemTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    tripsummaryview = this.getTripsummaryview();\r",
+                    "\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type : 'slide',\r",
+                    "    direction: 'left'\r",
+                    "});\r",
+                    "\r",
+                    "main.setActiveItem(tripsummaryview);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "list"
+            },
+            "designerId": "97e031c1-7939-42b8-b749-c85ba0f4d9e8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mytripview",
+                "selector": "mytripview"
+            },
+            "designerId": "588870b7-14f3-4a34-84bd-fd02eb3e18ef"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "triplist",
+                "selector": "list[name=triplist]"
+            },
+            "designerId": "a32e8ebc-4112-4b71-9a52-f775c25c9ed1"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tripsummaryview",
+                "selector": "tripsummaryview"
+            },
+            "designerId": "1e70a5bd-0b90-4ad0-ab7e-b7cb6a29a656"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "93cda787-5c3e-4547-8240-90cd351fc19d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tripdetailscancel",
+                "selector": "button[name=tripdetailscancel]"
+            },
+            "designerId": "f7ac6111-0a30-458d-99c3-05b288b52dc2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ontripdetailscancelButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    mytripview = this.getMytripview();\r",
+                    "\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type : 'slide',\r",
+                    "    direction: 'right'\r",
+                    "});\r",
+                    "\r",
+                    "main.setActiveItem(mytripview);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "tripdetailscancel"
+            },
+            "designerId": "87432af7-7238-4d8d-b31b-d9e40a1ba3d9"
+        }
+    ]
+}

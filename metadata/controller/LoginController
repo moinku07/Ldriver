@@ -1,0 +1,85 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LoginController",
+        "designer|userAlias": "logincontroller"
+    },
+    "designerId": "68b6ff89-7de8-4cc5-9f86-61838887d975",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onloginButtonTap",
+                "implHandler": [
+                    "var main = this.getMain();\r",
+                    "\r",
+                    "/*Ext.Viewport.animateActiveItem(main, {\r",
+                    "type: 'slide',\r",
+                    "direction: 'left'\r",
+                    "});*/\r",
+                    "\r",
+                    "Ext.Viewport.getLayout().setAnimation({\r",
+                    "    type: 'slide',\r",
+                    "    direction: 'left'\r",
+                    "});\r",
+                    "Ext.Viewport.setActiveItem(main);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "loginbutton"
+            },
+            "designerId": "e6b3b31a-4482-4e98-93d3-1dd3287d79c4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "main",
+                "selector": "main",
+                "xtype": "main"
+            },
+            "designerId": "47bd3d3a-237b-406d-b408-cedf08ca5971"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "dashboard",
+                "selector": "dashboard"
+            },
+            "designerId": "644056d0-6188-448f-ba3c-764b8b7d7245"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "loginbutton",
+                "selector": "button[name=loginbutton]"
+            },
+            "designerId": "3de07858-99e6-4934-88a3-455b2cf8ac3b"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "MyTripModel"
+        ],
+        "stores": [
+            "MyTripStore"
+        ],
+        "views": [
+            "Main",
+            "SignupView",
+            "Dashboard",
+            "NewtripView",
+            "DriveView",
+            "TripsummaryView",
+            "MytripView",
+            "SignatureView",
+            "LdriverView"
+        ],
+        "requires": [
+            "Ext.plugin.SignaturePad",
+            "Ext.device.Notification"
+        ],
+        "controllers": [
+            "MenuController",
+            "SignatureController",
+            "LoginController",
+            "NewtripController",
+            "LdriverController",
+            "DriveController",
+            "MytripController"
+        ],
+        "name": "Ldriver"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Viewport",
+            "reference": {
+                "name": "viewport",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoMaximize": true
+            },
+            "designerId": "653f7f6c-732d-43b2-9d15-89f351a3a258"
+        }
+    ]
+}

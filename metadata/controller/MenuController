@@ -1,0 +1,281 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MenuController",
+        "designer|userAlias": "menucontroller"
+    },
+    "designerId": "42a36a48-071b-4597-b3f8-1d78c93292cc",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "main",
+                "selector": "main"
+            },
+            "designerId": "48296765-35df-4401-942e-0221be206566"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "dashboard",
+                "selector": "dashboard"
+            },
+            "designerId": "c3e08b0c-ecdb-4ceb-af6e-8b6cb8cd0b53"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "newtripview",
+                "selector": "newtripview"
+            },
+            "designerId": "9029969c-8bcf-4eaf-b8b3-68daefe1fff8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "dashboardbutton",
+                "selector": "button[name=dashboardbutton]"
+            },
+            "designerId": "1d4cd2cf-d934-42d9-a704-fcab408262c3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "tripbutton",
+                "selector": "button[name=tripbutton]"
+            },
+            "designerId": "b807093a-f3c4-4c3d-ac8d-cdeae3d753d2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "drivebutton",
+                "selector": "button[name=drivebutton]"
+            },
+            "designerId": "c02b6368-45fe-425f-8c26-d260e48e8eb5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ondashboardbuttonButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    dashboard = this.getDashboard(),\r",
+                    "    driveview = this.getDriveview();\r",
+                    "\r",
+                    "this.removeButtonActiveClass('dashboardbutton');\r",
+                    "\r",
+                    "//if(main.getActiveItem() != driveview){\r",
+                    "\tthis.showButton('drivebutton');\r",
+                    "//}\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type:'slide',\r",
+                    "    direction:'right'\r",
+                    "});\r",
+                    "main.setActiveItem(dashboard);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "dashboardbutton"
+            },
+            "designerId": "e0b7eb0b-94ca-49c6-bca7-1cd897cbb6eb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ontripbuttonButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    mytripview = this.getMytripview();\r",
+                    "\r",
+                    "this.removeButtonActiveClass('tripbutton');\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type:'slide',\r",
+                    "    direction:'left'\r",
+                    "});\r",
+                    "main.setActiveItem(mytripview);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "tripbutton"
+            },
+            "designerId": "57efc186-f4ee-4285-a84f-cd74521c4c50"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "ondrivebuttonButtonTap",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    newtripview = this.getNewtripview();\r",
+                    "\r",
+                    "this.removeButtonActiveClass('begintrip');\r",
+                    "this.showButton('begintrip');\r",
+                    "main.getLayout().setAnimation({\r",
+                    "    type:'slide',\r",
+                    "    direction:'left'\r",
+                    "});\r",
+                    "main.setActiveItem(newtripview);\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "drivebutton"
+            },
+            "designerId": "115820d0-44b0-4115-88cb-c7580ca4a4cf"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mytripview",
+                "selector": "mytripview"
+            },
+            "designerId": "3bd3bfff-e29e-45cc-bc39-841a49c3148f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "driveview",
+                "selector": "driveview"
+            },
+            "designerId": "f631c5e2-f91e-4b22-9ee3-88b8eb24a97e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "activeDriveView",
+                "implHandler": [
+                    "var main = this.getMain(),\r",
+                    "    driveview = this.getDriveview();\r",
+                    "if(!Ext.app.isDriveViewActivated){\r",
+                    "    Ext.app.isDriveViewActivated = true;\r",
+                    "    this.removeButtonActiveClass();\r",
+                    "    //Ext.getCmp('bottomMenu').removeCls(['dashboard','drive']);\r",
+                    "    //Ext.getCmp('bottomMenu').addCls('drive');\r",
+                    "    //button.addCls('x-button-active');\r",
+                    "    main.getLayout().setAnimation({\r",
+                    "        type:'slide',\r",
+                    "        direction:'left',\r",
+                    "        duration:250\r",
+                    "    });\r",
+                    "    main.setActiveItem(driveview);\r",
+                    "    this.showButton('gobackbutton');\r",
+                    "    setTimeout(function(){\r",
+                    "        Ext.app.isDriveViewActivated = false;\r",
+                    "    },500);\r",
+                    "}"
+                ]
+            },
+            "designerId": "09aa6941-3492-4e2c-905e-b129dee99f9a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "removeButtonActiveClass",
+                "designer|params": [
+                    "id"
+                ],
+                "implHandler": [
+                    "var ids = ['dashboardbutton','drivebutton','tripbutton','begintrip','recordbutton','recordingbutton','resumebutton','approvebutton'];\r",
+                    "for(var i = 0; i< ids.length;i++){\r",
+                    "    Ext.getCmp(ids[i]).removeCls('x-button-active');\r",
+                    "}\r",
+                    "Ext.getCmp(id).addCls('x-button-active');"
+                ]
+            },
+            "designerId": "38a1980a-904f-4c80-8088-667dd6286448"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showButton",
+                "designer|params": [
+                    "id"
+                ],
+                "implHandler": [
+                    "var ids = ['drivebutton','gobackbutton','pausedbutton','begintrip','recordbutton','recordingbutton','resumebutton','approvebutton'];\r",
+                    "for(var i = 0; i< ids.length;i++){\r",
+                    "    Ext.getCmp(ids[i]).setHidden(true);\r",
+                    "}\r",
+                    "Ext.getCmp(id).setHidden(false);"
+                ]
+            },
+            "designerId": "16de7647-f113-4f5f-b1f1-698659b76662"
+        }
+    ]
+}

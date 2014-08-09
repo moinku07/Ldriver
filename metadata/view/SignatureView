@@ -1,0 +1,218 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SignatureView",
+        "designer|userAlias": "signatureview",
+        "layout": "vbox"
+    },
+    "designerId": "42f329bc-8a7f-459d-94d5-213d03722a4b",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "end",
+                "cls": [
+                    "top-toolbar",
+                    "dashboard-toolbar"
+                ],
+                "docked": "top",
+                "title": "Signature Capture"
+            },
+            "designerId": "86862ce2-79f0-4839-b794-d3a1ef774754",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "signaturereset",
+                        "cls": [
+                            "newtrip_button"
+                        ],
+                        "html": "<p class=\"cancel\">Reset</p>",
+                        "text": null
+                    },
+                    "designerId": "e1cf4aa1-4b84-4a48-aa19-d0ac99a58112",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "plugins": [
+                    "{\r",
+                    "                    xclass: 'Ext.plugin.SignaturePad',\r",
+                    "                    disableScrollCmp: 'signature',\r",
+                    "                    canvasId: 'signature'\r",
+                    "                }"
+                ],
+                "layout|flex": 1,
+                "cls": [
+                    "clientSignaturePanel"
+                ],
+                "id": "clientSignaturePanel",
+                "scrollable": false
+            },
+            "configAlternates": {
+                "plugins": "object"
+            },
+            "designerId": "f728d1e0-181b-4b53-82c4-0f076e22403d",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "plugins",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cs-slidetounlock-panel",
+                "cls": [
+                    "slidetounlock"
+                ],
+                "html": null,
+                "layout": "hbox",
+                "scrollable": null
+            },
+            "configAlternates": {
+                "scrollable": "object"
+            },
+            "designerId": "5d2c8b09-6f16-4486-91bf-ef0aa2db8329",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "listeners": [
+                            "[{\r",
+                            "    fn: function(component, eOpts) {\r",
+                            "        var timeoutId;\r",
+                            "        function setInit(x) {\r",
+                            "            Ext.ComponentQuery.query('panel[name=cs-slideunlock-slider]')[0].getDraggable().setOffset(0, 0);\r",
+                            "            return false;\r",
+                            "            Ext.ComponentQuery.query('panel[name=cs-slideunlock-slider]')[0].getDraggable().setOffset(x, 0);\r",
+                            "            if (x < 0) {\r",
+                            "                clearTimeout(timeoutId);\r",
+                            "                return false;\r",
+                            "            }\r",
+                            "            timeoutId = setTimeout(function() {\r",
+                            "                setInit(x - 5);\r",
+                            "            },\r",
+                            "            1);\r",
+                            "        }\r",
+                            "        Ext.app.initCSDraggable = function() {\r",
+                            "            component.setDraggable({\r",
+                            "                direction: 'horizontal',\r",
+                            "                constraint: {\r",
+                            "                    min: {\r",
+                            "                        x: 0,\r",
+                            "                        y: 0\r",
+                            "                    },\r",
+                            "                    max: {\r",
+                            "                        x: parseInt((window.innerWidth), 10),\r",
+                            "                        y: 0\r",
+                            "                    }\r",
+                            "                },\r",
+                            "                listeners: {\r",
+                            "                    drag: function(draggable, evt, offsetX, offsetY, eOpts) {\r",
+                            "                        if (offsetX >= parseInt((window.innerWidth - 80), 10)) {\r",
+                            "                            Ldriver.app.getApplication().getController('MenuController').activeDriveView();\r",
+                            "                            setTimeout(function(){\r",
+                            "                                Ext.app.reInitCSDraggable();\r",
+                            "                            },500);\r",
+                            "                        }\r",
+                            "                    },\r",
+                            "                    dragend: function(draggable, evt, offsetX, offsetY, eOpts) {\r",
+                            "                        if (offsetX >= parseInt((window.innerWidth - 80), 10)) {\r",
+                            "                            Ldriver.app.getApplication().getController('MenuController').activeDriveView();\r",
+                            "                            setTimeout(function(){\r",
+                            "                                Ext.app.reInitCSDraggable();\r",
+                            "                            },500);\r",
+                            "                        } else {\r",
+                            "                            timeoutId = null;\r",
+                            "                            setInit(offsetX);\r",
+                            "                        }\r",
+                            "                    }\r",
+                            "                }\r",
+                            "            });\r",
+                            "        };\r",
+                            "        Ext.app.reInitCSDraggable = function() {\r",
+                            "            component.setDraggable(false);\r",
+                            "            Ext.app.initCSDraggable();\r",
+                            "        };\r",
+                            "        Ext.Viewport.on(\"orientationchange\", Ext.app.reInitCSDraggable);\r",
+                            "        Ext.app.initCSDraggable();\r",
+                            "    },\r",
+                            "    event: 'initialize'\r",
+                            "}]"
+                        ],
+                        "name": "cs-slideunlock-slider",
+                        "cls": [
+                            "slideunlocktext"
+                        ],
+                        "html": "<p>Slide To Continue</p>"
+                    },
+                    "configAlternates": {
+                        "listeners": "array"
+                    },
+                    "designerId": "eca6c919-9772-4f61-b5f8-3ceb920b0b95",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "listeners",
+                            "type": "string"
+                        },
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

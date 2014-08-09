@@ -1,0 +1,46 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SignatureController",
+        "designer|userAlias": "signaturecontroller"
+    },
+    "designerId": "6732db16-57ce-4b16-a553-a1a3fb919e78",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onsignatureresetButtonTap",
+                "implHandler": [
+                    "Ext.getCmp('clientSignaturePanel').getPlugins()[0].reset();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "signaturereset"
+            },
+            "designerId": "840059dc-56ee-424e-8b1b-00a5f6451561"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "signaturereset",
+                "selector": "button[name=signaturereset]"
+            },
+            "designerId": "24d47e8c-7eb0-4040-8bf3-fbdf08475bf2"
+        }
+    ]
+}

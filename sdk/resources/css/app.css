@@ -1,0 +1,254 @@
+html, body { font-family: HelveticaNeue, Arial, sans-serif; }
+/*toolbar*/
+.top-toolbar.x-toolbar-dark.x-toolbar { min-height: 44px; height: 44px; }
+/*Bottom_Menu*/
+.bottom-menu { width: 100%; height: 82px; z-index: 10000; position: absolute; bottom: 0; }
+.bottom-menu .container { width: 100%; height: 50px; /*border-top: 1px solid #195181*/ }
+.bottom-menu .x-button { background: none; border-radius: 0; -webkit-border-radius: 0; border: none; padding: 0 !important; }
+/*dashboard menu color*/
+.bottom-menu.dashboard .container {/* border-top: 1px solid #195181*/ }
+.bottom-menu.dashboard .container, .bottom-menu.dashboard .x-button.btn-drive { background: #072641; }
+/*drive menu color*/
+.bottom-menu.drive .container { /*border-top: 1px solid #bbbbbb*/ }
+.bottom-menu.drive .container, .bottom-menu.drive .x-button.btn-drive { background: #444444; }
+.bottom-menu .x-button .x-button-label { color: #fff; font-size: 9px; line-height: 9px; }
+.bottom-menu .x-button.x-button-pressed .x-button-icon, .bottom-menu .x-button.x-button-pressing .x-button-icon, .bottom-menu .x-button.x-button-active .x-button-icon { background-color: #3892e3 !important; }
+.bottom-menu .x-button.x-button-pressed .x-button-label, .bottom-menu .x-button.x-button-pressing .x-button-label, .bottom-menu .x-button.x-button-active .x-button-label { color: #3892e3 !important; }
+.bottom-menu .x-button .x-button-icon {  -webkit-mask-size: 57px 57px; background-color: #fff; width: 57px; height: 57px; margin-bottom: 4px; margin-top: 8px }
+.x-button.btn-dashboard { width: 108px; height: 50px; position: absolute; left: 0; bottom: 0 }
+.x-button.btn-dashboard .x-button-icon.dashboard { -webkit-mask-image: url(../images/dashboard-icon.png); -webkit-mask-size: 30px 30px; background-color: #fff; width: 30px; height: 30px; margin-bottom: 3px; margin-top: 4px }
+.x-button.btn-trips { width: 108px; height: 50px; position: absolute; right: 0; bottom: 0 }
+.x-button.btn-trips .x-button-icon.trips { -webkit-mask-image: url(../images/trips-icon.png); -webkit-mask-size: 30px 23px; background-color: #fff; width: 30px; height: 23px; margin-bottom: 5px; margin-top: 9px }
+.x-button.btn-drive { width: 74px; height: 82px; position: absolute; left: 50%; bottom: 0; margin-left: -37px; border-top-left-radius: 40px; border-top-right-radius: 40px; }
+.x-button.btn-drive .x-button-icon.drive { -webkit-mask-image: url(../images/lets-drive-icon.png); -webkit-mask-size: 57px 57px; background-color: #fff; width: 57px; height: 57px; margin-bottom: 4px; margin-top: 8px }
+.x-button.btn-drive.btn-goback .x-button-icon.goback { -webkit-mask-image: none;background:none;background: url(../images/action-button.png) no-repeat center center;background-size: 57px 57px; background-color: transparent !important; }
+.x-button.btn-drive.record-trip .x-button-icon.record { -webkit-mask-image: none;background:none;background: url(../images/record-button.png) no-repeat center center;background-size: 57px 57px; background-color: transparent !important; }
+.x-button.btn-drive.recording-trip .x-button-icon.recording { -webkit-mask-image: none;background:none;background: url(../images/recording-button.png) no-repeat center center;background-size: 57px 57px; background-color: transparent !important; }
+.x-button.btn-drive.btn-paused .x-button-icon.paused { -webkit-mask-image: none;background:none;background: url(../images/paused-bottombar-icon.png) no-repeat center center;background-size: 57px 57px;background-color: transparent !important;}
+.x-button.btn-drive.btn-resume .x-button-icon.resume { -webkit-mask-image: none;background:none;background: url(../images/paused-bottombar-icon.png) no-repeat center center;background-size: 57px 57px;background-color: transparent !important;}
+.x-button.btn-drive.btn-approve .x-button-icon.approve { -webkit-mask-image: none;background:none;background: url(../images/sign-button.png) no-repeat center center;background-size: 57px 57px;background-color: transparent !important;}
+/*bottom-menu end*/
+.learnerpanel-user, .learnerpanel, .learnerpanel-raincloud, .dashboard_driving { height: 146px; }
+.dashboard-input, .formpanellearner, .jklm, .learnerimage-driving, .label-total-time, .mkl { width: 100%; }
+.learnerpanel-user, .learnerpanel { width: 50%; }
+.learnerimage { height: 117px; width: 100%; }
+.pan_driving_time { height: 134px; width: 100%; }
+.label-learnerimage, .traffic-panel-rain { height: 40px; width: 100%; }
+.learnerimage-driving { height: 30px; }
+.newtrip_titlebar { background: #eaeef1; border-bottom: 1px solid #e5e5e5 !important; }
+.newtrip_titlebar p { color: #000; font-size: 16px; text-shadow: none; }
+.learnerdriver { width: 100%; color: #fff !important; text-align: center; font-family: HelveticaNeue, Arial, sans-serif; font-size: 14px; line-height: 29px; font-weight: bold; }
+.learnerdriver-time { width: 100%; color: #fff !important; padding-left: 21px; font-family: HelveticaNeue, Arial, sans-serif; font-size: 14px; line-height: 29px; font-weight: bold; }
+.learnerimage-driving p { color: #fff; font-family: HelveticaNeue, Arial, sans-serif; font-size: 15px; text-align: center; line-height: 24px; }
+.number-32 { width: 100%; height: 116px; color: #fff; text-align: center; font-family: HelveticaNeue, Arial, sans-serif; font-size: 72px; line-height: 108px; font-weight: bold; }
+.label-total-time h1 { color: #fff; text-align: center; font-family: HelveticaNeue, Arial, sans-serif; line-height: 29px; font-size: 15px; }
+.learnerimage h1 { color: #fff; padding-left: 12px; font-family: HelveticaNeue, Arial, sans-serif; font-size: 71px; line-height: 88px; font-weight: bold; }
+.label-learnerimage p { color: #fff; padding-bottom: 13.5px; padding-left: 21px; font-family: HelveticaNeue, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 28px; }
+.panel-learnerimage p { color: #fff; padding-left: 18px; padding-bottom: 14.5px; font-size: 15px; }
+.pin-input-panel { height: 88px; width: 100%; }
+.pin-input-panel-number { width: 55px; height: 70px; background-image: -webkit-linear-gradient(#216099 1%, #216099 50%, #3892e3 51%, #3892e3 100%); margin-left: 3px !important; text-align: center; color: #fff; font-size: 73px; line-height: 68px; font-weight: bold; }
+.pin-input-panel-number:first-child { margin: 0 !important }
+.dashboard-toolbar { background: #eaeef1 !important; border: none !important; height: 44px !important; }
+.dashboard-toolbar p, .dashboard-toolbar .x-title { color: #072641; font-size: 16px; text-shadow: none !important; }
+.sun-panel, .moon-panel { height: 45px; width: 50%; }
+.sun-panel .x-innerhtml .text-pan { float: left; background: url(../images/sun.png) no-repeat; display: block; height: 22px; width: 22px; background-size: 100% 100%; margin-right: 9px; }
+.moon-panel .x-innerhtml .text-pan { float: left; background: url(../images/moon.png) no-repeat; display: block; height: 18px; width: 16px; background-size: 100% 100%; margin-right: 9px; }
+.learnerpanel-user { background: #3892e3 url(../images/user.png) no-repeat center 55%; background-size: 75px auto; }
+.learnerpanel-raincloud { width: 50%; background: #3892e3 url(../images/raining.png) no-repeat center center; background-size: 61px auto; background-position: 55px 49% }
+.traffic-panel-rain .text-pan { float: right; background: url(../images/road-icon.png) no-repeat; display: block; height: 20px; width: 20px; background-size: 100% 100%; margin-left: 10px; }
+.handlebutton { margin: 0 !important; height: 32px !important; background: #eaeef1 url(../images/handle.png) no-repeat center center !important; background-size: 50% !important; width: 38px !important; background-position: 48% 50% !important; border: none !important; }
+.userbutton { width: 32px; height: 32px; border: none !important; background: #eaeef1 url(../images/user-setting.png) no-repeat center center !important; background-size: 50% 50% !important; }
+.sun-image { width: 20px; height: 20px; display: block; float: left; background-size: 100% }
+.newtrip_button { background: none !important; border: none!important; margin: 0 !important; }
+.x-toolbar .x-button .x-button-label { font-weight: normal !important; margin-bottom: -2px !important; margin-right: 3px; }
+.newtrip_button p.cancel { color: #3892e3; font-size: 17px; }
+.home-label .firsttext-span { height: 47px; line-height: 47px; padding-left: 11px; }
+.home-label .lasttext-span { float: right; font-size: 15px; margin-right: 1px; }
+.list-image { width: 44px }
+.home-panel-image { background: #3892e3 url(../images/home.png) no-repeat center center; background-size: auto 23px; }
+.map-panel-image { background: #5aa602 url(../images/map.png) no-repeat center center; background-size: auto 22px; }
+.car-panel-image { background: #fb6e17 url(../images/car.png) no-repeat center center; background-size: auto 23px; }
+.parking-panel-image { background: #3892e3 url(../images/parking.png) no-repeat center center; background-size: auto 28px; }
+.traffic-panel-image { background: #5aa602 url(../images/traffic.png) no-repeat center center; background-size: auto 27px; }
+.weather-panel-image { background: #fb6e17 url(../images/weather.png) no-repeat center center; background-size: auto 25px; }
+.road-panel-image { background: #3892e3 url(../images/road.png) no-repeat center center; background-size: auto 25px; }
+.time-panel-image { background: #5aa602 url(../images/time.png) no-repeat center center; background-size: auto 25px; }
+.odometer-panel-image { background: #fb6e17 url(../images/odometer.png) no-repeat center center; background-size: auto 19px; }
+.supervisor-panel-image { background: #3892e3 url(../images/supervisor.png) no-repeat center center; background-size: auto 25px; }
+.discloser-image { background: url(../images/discloser-icon.png) no-repeat center center; background-size: auto 14px; width: 34px }
+.home_first_panel { background: #e6f2fd; border-bottom: 1px solid #fff; height: 48px; }
+.home_second_panel { background: #effbe0; border-bottom: 1px solid #fff; height: 48px; }
+.home_third_panel { background: #fff0e6; border-bottom: 1px solid #fff; height: 48px; }
+.toggle-field { background: none; margin-right: 12px; min-height: 31px; }
+.toggle-field .x-toggle { height: 31px; width: 51px; }
+.toggle-field .x-thumb { width: 28px; height: 28px; }
+.toggle-field .x-thumb:before { top: 1px; }
+.toggle-field .x-thumb:after { width: 26px; height: 26px; top: 1px; left: 1px; border: none; background: #fff; }
+.toggle-field .x-toggle-on:before { font-size: 10px; line-height: 31px; color: #fff; left: 3px; }
+.toggle-field.toggle-field-first .x-toggle-on { background-color: #3892e3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3892e3), color-stop(100%, #3892e3), color-stop(100%, #3892e3), color-stop(100%, #3892e3)); background-image: -webkit-linear-gradient(#3892e3, #3892e3 100%, #3892e3 100%, #3892e3); background-image: linear-gradient(#3892e3, #3892e3 100%, #3892e3 100%, #3892e3) }
+.toggle-field.toggle-field-second .x-toggle-on { background-color: #f96d17; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f96d17), color-stop(100%, #f96d17), color-stop(100%, #f96d17), color-stop(100%, #f96d17)); background-image: -webkit-linear-gradient(#f96d17, #f96d17 100%, #f96d17 100%, #f96d17); background-image: linear-gradient(#f96d17, #f96d17 100%, #f96d17 100%, #f96d17) }
+.toggle-field.toggle-field-second .x-toggle-on:before { position: absolute; content: 'Wet' }
+/* DrivechecklistView*/
+.recordtripimage { width: 100%; margin: 0 auto; background: url(../images/totalroad.png) no-repeat center center; background-size: 100% 100%; }
+.recordpanel { width: 60%; background: url(../images/traffic.png) no-repeat 19px 38px; background-size: auto 47px; }
+.recordpanlabel { width: 100%; color: white; padding-top: 62px; padding-left: 56px; font-size: 18px; font-family: HelveticaNeue, Arial, sans-serif; font-weight: bold; }
+.checklist_weather{ width: 40%;  background-size: 80px 80px; background-position: 29px 28px;background-repeat:no-repeat}
+.checklist_weather.rain {background-image: url(../images/raining.png); }
+.checklist_weather.sunny {background-image: url(../images/Sunny.png); }
+.checklist_weather.cloudy {background-image: url(../images/Cloudy.png); }
+.checklist_weather.heavyrain {background-image: url(../images/Heavy Rain.png); }
+.checklist_weather.overcast {background-image: url(../images/Overcast.png); }
+.checklist_weather.stormy {background-image: url(../images/Stormy.png); }
+.record_pan { height: 152px; width: 100%; }
+.record_pan h1 { padding-left: 2px; color: #fff; font-size: 104px; line-height: 107px; text-align: center; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; letter-spacing: 1px; }
+.min-hours { line-height: 73px; position: absolute; bottom: 0; width: 100%; }
+.min { padding-left: 15px; font-size: 30px; color: #fff; font-family: HelveticaNeue, Arial, sans-serif; font-weight: bold; }
+.min .hour { float: right; padding-right: 10px; }
+/*.recordpasscode .odometer-timer{background:#262626;border:3px solid #fff !important;border-radius:10px;margin-top:55px;}*/
+.recordpasscode { height: 184px; }
+.odometer-timer { height: 97px; width: 196px; background: url(../images/odometrer-check.png) no-repeat center center; background-size: 100% 100%; margin-bottom: 85px; }
+.odometer-timer .odometer-timer-pin { color: #fff; font-size: 36px; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; margin-top: 35px; letter-spacing: 6px; text-align: center; }
+/*
+.odometer-timer-pin:first-child{margin-left:2px !important;}*/
+
+/*Trip paused*/
+.resume_container { width: 100; margin: 0 auto; background: url(../images/totalroad.png) no-repeat center center; background-size: 100% 100%; }
+.trip_header h1 { width: 100%; text-align: center; font-size: 35px; color: #fff; line-height: 82px; font-family: HelveticaNeue, Arial, sans-serif; }
+.paused_resume_panel { height: 278px; width: 100%; background: url(../images/paused-icon.png) no-repeat center 80px; background-size: 126px 126px; }
+.paused_resume_trip.x-button { position: absolute; bottom: 6px; left: 8px; width: 77px; height: 77px; background: url(../images/resume-circle.png) no-repeat center center !important; background-size: 100% 100%;border: none;  }
+.paused_resume_endtrip.x-button { position: absolute; bottom: 6px; right: 9px; width: 77px; height: 77px; background: url(../images/resume-trip-button.png) no-repeat center center !important; background-size: 100% 100%;border:none; }
+
+.paused_resume_trip p.resume_text { color: #fff; font-size: 15px; line-height:1; font-weight: bold; text-align: center; }
+.paused_resume_endtrip p.end_text { color: #000; font-size: 14px; font-weight: bold; text-align: center;line-height:1; }
+.paused_resume_timer { height: 150px; width: 100%; }
+.paused_resume_timer h2 { width: 100%; color: #fff; text-align: center; line-height: 70px; font-size: 62px; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; }
+.paused_resume_hours-min { color: #fff; position: absolute; bottom: 0; width: 100%; line-height: 155px; }
+.hour1 { float: right; padding-right: 74px; font-size: 17px; font-family: HelveticaNeue, Arial, sans-serif; font-weight: bold; }
+.min1 { padding-left: 73px; font-size: 17px; color: #fff; font-family: HelveticaNeue, Arial, sans-serif; font-weight: bold; }
+/*trip check list view*/
+.recordfirstpan.x-panel { height: 112px; width: 100%; margin-bottom: 36px; }
+.check_list_panel_container { width: 286px; height: 344px; position: absolute; bottom: 87px; left: 50%; margin-left: -143px; background-image: url(../images/checklist-footer.png); background-repeat: no-repeat; background-position: center bottom; background-size: 64px 20px; }
+.check_list_panel { width: 286px; height: 324px; background: rgba(255, 255, 255, 0.93); border-radius: 8px !important; }
+.check_list_panel_toolbar { background: #fbfdfc; min-height: 53px !important; height: 53px !important; width: 266px; border-bottom: 1px solid #9c9c9c; }
+.check_list_panel_toolbar p { font-weight: bold; color: #000; text-align: center; font-family: HelveticaNeue, Arial, sans-serif; text-shadow: none; font-size: 18px; line-height: 54px; }
+.check_list_panel_toolbar-button { height: 30px; width: 35px; background: url(../images/cancel-icon.png) !important; background-repeat: no-repeat !important; background-position: center center !important; background-size: 35px 30px !important; border: none !important; margin-top: 10px; margin-right: -1px; position: absolute; top: 0; right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.trip-checklist-panel-list { margin-top: 17px; width: 267px; }
+.trip-checklist-panel-list p.tripnote{margin:0;padding:10px 0; font-size:10px; font-weight:normal;display:none}
+.check_list_panel_container.tripnote{height: 374px;}
+.check_list_panel_container.tripnote .check_list_panel{height:354px;}
+.check_list_panel_container.tripnote .trip-checklist-panel-list p.tripnote{display:block}
+.trip-checklist-panel-phone { width: 267px; height: 45px; border-bottom: 1px solid #fefefe; background: #e3e2e2; }
+.check-list-image { height: 44px; width: 43px; }
+.plug-panel-image { background: #5aa602 url(../images/plug-icon.png) no-repeat center center; background-size: auto 25px; }
+.plates-panel-image { background: #fbe500 url(../images/plates-icon.png) no-repeat center center; background-size: auto 25px; }
+.seatbelt-panel-image { background: #fb6e17 url(../images/seat-belt-icon.png) no-repeat center center; background-size: auto 26px; }
+.car-panel-image-car { background: #3892e3 url(../images/car-icon.png) no-repeat center center; background-size: auto 21px; }
+.phone-panel-image { background: #aeacac url(../images/phone-icon.png) no-repeat center center; background-size: auto 24px; }
+.phone-panel-middle-label { background: #e3e2e2; }
+.phone-panel-middle-label p { text-shadow: none !important; color: #000; font-size: 15px; line-height: 47px; font-family: HelveticaNeue, Arial, sans-serif; padding-left: 6px; }
+.check-toggle-field { background: none; margin-right: 5px; min-height: 31px; }
+.check-toggle-field .x-toggle { height: 31px; width: 51px; }
+.check-toggle-field .x-thumb { width: 28px; height: 28px; }
+.check-toggle-field .x-thumb:before { top: 1px; }
+.check-toggle-field .x-thumb:after { width: 26px; height: 26px; top: 1px; left: 1px; border: none !important; background: #fff; }
+.check-toggle-field .x-toggle-on:before { font-size: 10px; line-height: 31px; color: #fff; left: 3px; }
+.check-toggle-field.toggle-field-first .x-toggle-on { background-color: #3892e3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3892e3), color-stop(100%, #3892e3), color-stop(100%, #3892e3), color-stop(100%, #3892e3)); background-image: -webkit-linear-gradient(#3892e3, #3892e3 100%, #3892e3 100%, #3892e3); background-image: linear-gradient(#3892e3, #3892e3 100%, #3892e3 100%, #3892e3) }
+.trip-check-list-container { background: url(../images/totalroad.png) no-repeat center center; background-size: 100% 100%; }
+.tripcheck-list-panel { margin: 15px 10px 25px 10px; }
+.supervisor-approval-panel-list { width: 267px; margin-top: 2px; }
+.supervisor-horizontal-panel { height: 67px; }
+.supervisor-approval-image-panel { width: 60px; height: 67px; background: url(../images/user-icon.png) no-repeat center center; background-size: 50px 50px; }
+.supervisor-approval-text-panel p.firsttext-supervisor { padding-left: 15px; padding-top: 14px; font-family: HelveticaNeue, Arial, sans-serif; font-size: 15px; }
+.supervisor-approval-text-panel p.lasttext-supervisor { font-family: HelveticaNeue, Arial, sans-serif; font-size: 17px; padding-left: 15px; line-height: 19px; }
+.supervisor-approval-image-clock { width: 60px; height: 67px; background: url(../images/clock-icon.png) no-repeat center center; background-size: 50px 50px; }
+.supervisor-approval-image-supervisor { width: 60px; height: 67px; background: url(../images/supervisor-icon.png) no-repeat center center; background-size: 50px 50px; }
+.supervisor-panel-html-text { width: 100%; height: 67px; }
+.supervisor-panel-html-text p { text-align: center; font-family: HelveticaNeue, Arial, sans-serif; font-size: 16px; font-weight: normal; padding-top: 14px; padding-left: 30px; line-height: 19px; }
+.clientSignaturePanel{width:100%;/*padding:8px*/;background:#e5e5e5}
+/*trip summary*/
+.tripsummary_titlebar { background: #eaeef1; border: none !important; }
+.tripsummary_titlebar p { color: #000; font-size: 16px; text-shadow: none; }
+.summary-trip-panel { padding-bottom: 47px; width: 100%; }
+.trip_summary_date-panel { width: 100%; height: 52px; background: url(../images/trip-summary-footer.png); background-repeat: no-repeat; background-position: center bottom; background-size: 23px 8px; }
+.trip_summary_date-panel-text { width: 100%; height: 44px; background: #3892e3; }
+.trip-calendar-image { margin-left: 53px; margin-top: 10px; width: 20px; height: 21px; background: url(../images/calendar-image.png); background-repeat: no-repeat; background-position: center center; background-size: 20px 21px; }
+.trip-summary-date-text p { color: #fff; line-height: 42px; padding-left: 13px; letter-spacing: -1px; }
+.trip-summary-time-counter { width: 100%; height: 152px; }
+.trip-summary-time-counter h1 { padding-left: 2px; color: #083b67; font-size: 104px; line-height: 101px; text-align: center; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; letter-spacing: 1px; }
+.trip-summary-time-counter-min-hour { position: absolute; bottom: 39px; width: 100%; height: 20px; }
+.trip-min { padding-left: 15px; font-size: 30px; color: #083b67; font-family: HelveticaNeue, Arial, sans-serif; font-weight: bold; }
+.trip-min .trip-hour { float: right; padding-right: 10px; }
+.googlemap-trip-panel { width: 100%; height: 230px; bottom: 9px; }
+.googlemap-trip { height: 230px; width: 294px; padding: 0 13px; border: 1px solid #7f7f7f; }
+/*.trip-image-panel{width:100%;}*/
+.trip-images-panel-home { width: 100%; height: 47px; }
+.trip-images-panel-home-supervisor { width: 100%; height: 47px; margin-top: 2px; margin-bottom: 2px; }
+.trip-panel-image { width: 44px; height: 47px; }
+.home-label-trip { height: 45px; border-bottom: 1px solid#c2c2c2; line-height: 45px; padding-left: 12px; font-size: 17px; font-weight: bold; }
+.trip-panel-image-map { background: url(../images/map-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 26px; margin-left: 13px; }
+.trip-panel-image-car { background: url(../images/car-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 22px; margin-left: 13px; }
+.trip-panel-image-parking { background: url(../images/parking-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 28px; margin-left: 13px; }
+.trip-panel-image-traffic { background: url(../images/traffic-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 27px; margin-left: 13px; }
+.trip-panel-image-weather { background: url(../images/weather-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 25px; margin-left: 13px; }
+.trip-panel-image-road { background: url(../images/road-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 25px; margin-left: 13px; }
+.trip-panel-image-clock { background: url(../images/clock-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 25px; margin-left: 13px; }
+.trip-panel-image-odometer { background: url(../images/odometer-color-icon.png); background-repeat: no-repeat; background-position: center center; background-size: auto 20px; margin-left: 13px; }
+.trip-panel-image-supervisor { background: url(../images/supervisor-color.png); background-repeat: no-repeat; background-position: center center; background-size: auto 25px; margin-left: 13px; }
+.home-label-trip-supervisor { height: 47px; line-height: 47px; padding-left: 11px; }
+.summary-box-panel { width: 100%; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 97px; }
+.supervisor-box-panel { height: 118px; border: 1px solid#000; border-radius: 7px; }
+.triplist.x-list .x-list-item.x-list-item-tpl .x-innerhtml { padding: 0 }
+.triplist.x-list-normal .x-list-item.x-list-item-tpl{ border-color: #fff }
+.triplist.x-list-normal .x-list-item.x-list-item-tpl.x-list-header-wrap{border-top:none}
+.triplist.x-list-normal .x-list-item.x-list-item-tpl.x-list-footer-wrap{border-bottom:none}
+.triplist.x-list-normal .x-list-item.x-list-item-last{margin-bottom:90px}
+/*.triplist.x-list-normal .x-list-item.x-list-item-tpl.x-list-item-first,.triplist.x-list-normal .x-list-item.x-list-item-first .x-dock-horizontal{border:none}*/
+.trip-list { width: 100%; min-height: 47px; }
+.trip-list .left { background-color: #8dbfec; height: 47px; width: 54px; float: left; }
+.trip-list .left p { margin-left: 8px; line-height: 47px; text-align: left; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; font-size: 25px; }
+.trip-list.day .left { background-image: url(../images/sun-icon.png); background-repeat: no-repeat; background-position: 36px 6px; background-size: 14px 14px; color: #04447e; }
+.trip-list.night .left { background-color: #034d8f; background-image: url(../images/moon-icon.png); background-repeat: no-repeat; background-position: 39px 7px; background-size: 12px 13px; color: #fff }
+.trip-list .right { width: 100%; background: white; height: 48px; color: #000; border-bottom: 1px solid #c2c2c2 }
+.trip-list.night .right { background: #e6f2fd }
+.trip-list .right p { line-height: 47px; margin-left: 66px; font-size: 15px; font-family: HelveticaNeue, Arial, sans-serif; }
+/*.trip-list .right p span.trip_span { float: right; margin-right: 32px; color: #8dbfec; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; }*/
+.trip-list.night .right p span.trip_span { float: right; margin-right: 32px; color: #034d8f; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; font-size: 16px; }
+.trip-list.day .right p span.trip_span { float: right; margin-right: 32px; color: #3892e3; font-weight: bold; font-family: HelveticaNeue, Arial, sans-serif; }
+.triplist.x-list .x-list-disclosure:before { content: '' }
+.triplist.x-list .x-list-disclosure { background: url(../images/discloser.png); background-repeat: no-repeat; background-size: 9px 14px; width: 9px; height: 14px; background-position: center center; margin: 0; margin-right: 13px; top: 50%; margin-top: -7px }
+.triplist.x-list-normal .x-list-header { background: #3892e3; color: #fff; padding-left: 6px; border-top: none !important; border-bottom: none !important; text-shadow: none; }
+.mytrip_titlebar { background: #eaeef1; border-bottom: 1px solid #e5e5e5 !important; min-height: 45px; height: 45px; }
+.mytrip_titlebar p { color: #333333; font-size: 16px; text-shadow: none; font-family: HelveticaNeue, Arial, sans-serif; }
+/*singup view*/
+.parentabcd { background: #3992e3; width: 100%; padding: 10px 11px 11px 11px; }
+.singup-panel { background: #fff url(../images/l-driver-logo.png) no-repeat center 42px; border-radius: 10px; background-size: 125px 125px }
+.formpaneltext { position: absolute; bottom: 14px; height: 239px; width: 100%; padding: 0 20px; }
+.formpaneltext .x-inner.x-form-inner { background: #fff; }
+/*.formpaneltext .tick-buttonimage{background: #0274dc url(../images/tick-icon.png) no-repeat center center;background-size:33px 26px;margin-bottom: 4px;height:50px;border-radius:none !important;border:none !important;}*/
+.formpaneltext .x-button-normal.x-button.tick-buttonimage { background: #0274dc url(../images/tick-icon.png) no-repeat center center; background-size: 33px 26px; margin-bottom: 13px; height: 49px; border-radius: 0; -webkit-border-radius: 0; -webkit-border: none; border: none; padding: 0; }
+.formpaneltext .x-button-normal.x-button.facebookbutton { background: #273b6d url(../images/facebook-icon.png) no-repeat 0px center; background-size: 38px 38px; height: 49px; border-radius: 0; border: none; padding: 0; }
+.facebookbutton p { color: #fff; margin-left: 33px; font-weight: normal; }
+.signup-button { background: #fb6e17; color: #fff; border-top-right-radius: 0; border-top-left-radius: 0; border-bottom-right-radius: 0; width: 83px; min-height: 30px; height: 30px; border: none; padding-left: 13px; ; font-size: 16px; }
+.form-text-field.x-field .x-input-el { height: 49px; min-height: 49px; border: 1px solid #acacac; background: #efeeee; border-radius: 7px; font-weight: bold; }
+.form-text-field { margin-bottom: 13px; }
+/*L-Driver View*/
+.l-driver-container { margin: 0 auto; background: #3992e3 url(../images/ldriver-white-logo.png); background-repeat: no-repeat; background-position: center 61px; background-size: 125px 125px; }
+.l-driver-panel { width: 100%; height: 100px; position: absolute; bottom: 129px; color: #fff; text-align: center; font-size: 21px; }
+/*Slide to unlock start*/
+.slidetounlock{height:49px;width:100%;background-color:#5aa602}
+.slidetounlock .slideunlocktext{width:100%;height:49px;color:#fff;line-height:49px;text-align:center;background-image:url(../images/discloser-white.png); background-repeat:no-repeat; background-position:50px center;}
+.slidetounlock .slideunlocktext p{width: 100%;background: -webkit-gradient(linear, left top, right top, color-stop(0, #60b301), color-stop(0.4, #60b301), color-stop(0.5, white), color-stop(0.6, #60b301), color-stop(1, #60b301)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-animation: slidetounlock 5s infinite;}
+@-webkit-keyframes slidetounlock {  
+	0%{
+		background-position: -150px 0;
+	}
+	100% {
+		background-position: 150px 0;
+	}
+}
+/*slide to unlock end*/
+ @media only screen and (max-height : 480px) {
+.recordfirstpan.x-panel { margin-bottom: 0px; }
+.record_pan { height: 143px; }
+.min-hours { line-height: 55px; }
+}
