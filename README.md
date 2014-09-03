@@ -7,3 +7,8 @@ The app uses location services to track a learner driver's trip, tally up their 
 Built for use by both the learner driver and their supervisor, the app also includes a sign on glass feature to capture supervisor signatures as proof of journey's logged.
 
 For more information visit http://durlov.com/Ldriver
+
+
+Thanks a lot. 
+Happy Coding!
+Moin
